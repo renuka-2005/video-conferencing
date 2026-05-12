@@ -92,7 +92,7 @@ function MeetingRoom({ roomId, username, onLeave }) {
         .map(t => `[${t.username}]: ${t.text}`)
         .join('\n');
 
-      const response = await fetch('http://localhost:5000/api/summarize', {
+      const response = await fetch('https://video-conferencing-6qsm.onrender.com/api/summarize', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ transcript: transcriptText })

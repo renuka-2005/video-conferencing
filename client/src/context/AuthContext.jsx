@@ -11,7 +11,7 @@ export const AuthProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
 
   // Use the same base URL as socket, fallback to localhost:5000
-  const API_URL = import.meta.env.VITE_SERVER_URL || 'http://localhost:5000/api';
+  const API_URL = import.meta.env.VITE_SERVER_URL || 'https://video-conferencing-6qsm.onrender.com/api';
 
   useEffect(() => {
     const fetchUser = async () => {

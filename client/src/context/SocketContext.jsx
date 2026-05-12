@@ -12,7 +12,7 @@ export const SocketProvider = ({ children }) => {
 
   useEffect(() => {
     // Determine the server URL. Using localhost for development.
-    const serverUrl = import.meta.env.VITE_SERVER_URL || 'http://localhost:5000';
+    const serverUrl = import.meta.env.VITE_SERVER_URL || 'https://video-conferencing-6qsm.onrender.com';
     
     const newSocket = io(serverUrl);
     setSocket(newSocket);
